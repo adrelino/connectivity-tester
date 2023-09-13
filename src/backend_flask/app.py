@@ -32,6 +32,9 @@ def not_found_error(error):
 def internal_error(error):
     return render_template("500.html"), 500
 
+@app.route("/")
+def get_index():
+        return render_template("index.html")
 
 @app.route("/conntest/api/time")
 def get_current_time():
