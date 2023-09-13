@@ -2,6 +2,17 @@
 
 {% block content %}
     <h3>Try these APIs:</h3>
-    <p><a href="/conntest/api/time">/conntest/api/time</a></p>
-    <p><a href="/conntest/api/ping/single?h=google.com">/conntest/api/ping/single?h=google.com</p>
+    <p>time<a href="/conntest/api/time">../time</a></p>
+    <p>ping<a href="/conntest/api/ping/single?h=google.com">../ping/single?h=google.com</a></p>
+    <p>ntp<a href="/conntest/api/ntp?h=at.pool.ntp.org">../ntp?h=at.pool.ntp.org</a></p>
+    dns
+    <p>
+        forward <a href="/conntest/api/dns?h=google.at">../dns?h=google.at</a><br>
+        reverse <a href="/conntest/api/dns/reverse?h=8.8.8.8">../dns/reverse?h=8.8.8.8</a>
+    </p>
+    smb
+    <p>
+        login <a href="/conntest/api/smb?h=localhost&u=user&p=pass">../smb?h=localhost&u=user&p=pass</a><br>
+        browse <a href="/conntest/api/smb/browse?share=MyShare&path=">../smb/browse?share=MyShare&path=</a>
+    </p>
 {% endblock %}

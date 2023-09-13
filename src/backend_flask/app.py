@@ -455,3 +455,7 @@ def get_http():
         status = 4
 
     return {"response": response, "status": status}
+
+
+#import smb routes from other file, see https://stackoverflow.com/a/59155127
+import smb_routes
